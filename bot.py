@@ -7,7 +7,6 @@ from aiogram.filters import Command
 # API Tokenlar
 TOKEN = "7248324427:AAHEqXfWo9zimVCA-C4Q8KCTekvBuBM4HV0"
 GEMINI_API_KEY = "AIzaSyCccyK4vrlNiGjDTJD5QV8md7u4BRb_g0k"
-CREATOR_NAME = "AbbosbekAI"
 
 # Bot va AI sozlamalari
 bot = Bot(token=TOKEN)
@@ -40,13 +39,7 @@ async def gemini_reply(message: Message):
         await message.answer("Haddan tashqari ko‘p so‘rov yuborildi. Biroz kuting va qayta urinib ko‘ring.")
         await asyncio.sleep(60)  # 1 daqiqa kutish
         print(f"Xato: {e}")  # Terminalda xatolikni chiqarish
-
-@dp.message(lambda message: "kim yarat" in message.text.lower())
-async def creator_info(message: types.Message):
-    await message.answer(
-        f"Men {CREATOR_NAME} tomonidan ishlab chiqilganman! 🤖\n"
-        "Yana savollaringiz bo‘lsa, bemalol so‘rashingiz mumkin!"
-    )       
+     
 
 # Asinxron botni ishga tushirish
 async def main():
