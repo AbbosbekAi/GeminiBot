@@ -22,12 +22,12 @@ async def welcome(message: Message):
     await message.answer("👋 Salom! Men Google AI botman. Menga savol bering!")
 
 # /help komandasi
-@dp.message(commands=['help'])
+@dp.message(Command('help'))
 async def help_command(message: Message):
     await message.answer("✉️ Telegram orqali bog‘lanish uchun: @zuPREDATOR")
 
 # /info komandasi
-@dp.message(commands=['info'])
+@dp.message(Command('info'))
 async def info_command(message: Message):
     await message.answer("ℹ️ Botning ma'lumotlari:\n📅 Ishlab chiqarilgan sana: 2025.03.27\n🔢 Versiya: Gemeni AI 1.5 pro")    
 
