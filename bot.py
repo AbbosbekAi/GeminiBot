@@ -5,7 +5,7 @@ from aiogram.types import Message
 from aiogram.filters import Command
 
 # API Tokenlar
-TOKEN = "7248324427:AAHEqXfWo9zimVCA-C4Q8KCTekvBuBM4HV0"
+TOKEN = "7678836579:AAEGPLXN-Pw5FNPKXlcIm7Q8Fv961Ug7IY0"
 GEMINI_API_KEY = "AIzaSyCccyK4vrlNiGjDTJD5QV8md7u4BRb_g0k"
 
 # Bot va AI sozlamalari
